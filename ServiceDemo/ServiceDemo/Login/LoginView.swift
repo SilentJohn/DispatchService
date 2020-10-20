@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import DispatchCommon
 
 struct LoginView: View {
     static private let backgroundColor = Color(.init(gray: 0.96, alpha: 1))
@@ -15,6 +16,13 @@ struct LoginView: View {
     
     var body: some View {
         VStack(spacing: 20) {
+            PageView((0...2).map {
+                Image(uiImage: UIImage(imageLiteralResourceName: "login-cycle-\($0).jpg"))
+                    .resizable()
+                    .scaledToFit()
+            })
+            .frame(height: 213)
+            
             HStack {
                 Image("phone")
                 Divider()
@@ -59,7 +67,7 @@ struct LoginView: View {
                 )
                 .padding(.trailing)
             }
-            
+            Spacer()
         }
     }
 }

@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1716243D253C536F00B88033 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 1716243C253C536F00B88033 /* Cartfile */; };
+		17162446253D927000B88033 /* DispatchCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17162445253D927000B88033 /* DispatchCommon.framework */; };
+		17162447253D927000B88033 /* DispatchCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 17162445253D927000B88033 /* DispatchCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		17162463253D95CE00B88033 /* login-cycle-0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17162460253D95CE00B88033 /* login-cycle-0.jpg */; };
+		17162464253D95CE00B88033 /* login-cycle-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17162461253D95CE00B88033 /* login-cycle-1.jpg */; };
+		17162465253D95CE00B88033 /* login-cycle-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17162462253D95CE00B88033 /* login-cycle-2.jpg */; };
 		176257322520FA2A005704BD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176257312520FA2A005704BD /* MainView.swift */; };
 		179A4DE22520968B00EC81C5 /* ServiceDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179A4DE12520968B00EC81C5 /* ServiceDemoApp.swift */; };
 		179A4DE42520968B00EC81C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179A4DE32520968B00EC81C5 /* ContentView.swift */; };
@@ -20,6 +26,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		17162456253D947700B88033 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17162451253D947700B88033 /* DispatchCommon.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 17162417253C525400B88033;
+			remoteInfo = DispatchCommon;
+		};
+		17162458253D947700B88033 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17162451253D947700B88033 /* DispatchCommon.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 17162420253C525400B88033;
+			remoteInfo = DispatchCommonTests;
+		};
 		179A4DF52520968E00EC81C5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 179A4DD62520968B00EC81C5 /* Project object */;
@@ -36,7 +56,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		17162448253D927000B88033 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				17162447253D927000B88033 /* DispatchCommon.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1716243C253C536F00B88033 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		17162443253D916A00B88033 /* carthage-build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "carthage-build.sh"; sourceTree = "<group>"; };
+		17162445253D927000B88033 /* DispatchCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DispatchCommon.framework; path = Carthage/Build/iOS/DispatchCommon.framework; sourceTree = "<group>"; };
+		1716244F253D93F000B88033 /* ServiceCarthageInput.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = ServiceCarthageInput.xcfilelist; sourceTree = "<group>"; };
+		17162450253D940600B88033 /* ServiceCarthageOutput.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = ServiceCarthageOutput.xcfilelist; sourceTree = "<group>"; };
+		17162451253D947700B88033 /* DispatchCommon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DispatchCommon.xcodeproj; path = ../../DispatchCommon/DispatchCommon/DispatchCommon.xcodeproj; sourceTree = "<group>"; };
+		17162460253D95CE00B88033 /* login-cycle-0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "login-cycle-0.jpg"; sourceTree = "<group>"; };
+		17162461253D95CE00B88033 /* login-cycle-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "login-cycle-1.jpg"; sourceTree = "<group>"; };
+		17162462253D95CE00B88033 /* login-cycle-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "login-cycle-2.jpg"; sourceTree = "<group>"; };
 		176257312520FA2A005704BD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		179A4DDE2520968B00EC81C5 /* ServiceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServiceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		179A4DE12520968B00EC81C5 /* ServiceDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDemoApp.swift; sourceTree = "<group>"; };
@@ -60,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17162446253D927000B88033 /* DispatchCommon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +124,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17162444253D927000B88033 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17162445253D927000B88033 /* DispatchCommon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1716244E253D93A300B88033 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				1716244F253D93F000B88033 /* ServiceCarthageInput.xcfilelist */,
+				17162450253D940600B88033 /* ServiceCarthageOutput.xcfilelist */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		17162452253D947700B88033 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17162457253D947700B88033 /* DispatchCommon.framework */,
+				17162459253D947700B88033 /* DispatchCommonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		176257302520FA19005704BD /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,10 +161,15 @@
 		179A4DD52520968B00EC81C5 = {
 			isa = PBXGroup;
 			children = (
+				17162451253D947700B88033 /* DispatchCommon.xcodeproj */,
+				17162443253D916A00B88033 /* carthage-build.sh */,
+				1716243C253C536F00B88033 /* Cartfile */,
+				1716244E253D93A300B88033 /* Dependencies */,
 				179A4DE02520968B00EC81C5 /* ServiceDemo */,
 				179A4DF72520968E00EC81C5 /* ServiceDemoTests */,
 				179A4E022520968E00EC81C5 /* ServiceDemoUITests */,
 				179A4DDF2520968B00EC81C5 /* Products */,
+				17162444253D927000B88033 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -162,6 +237,9 @@
 		17FA98952538A41000F1BB1A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				17162460253D95CE00B88033 /* login-cycle-0.jpg */,
+				17162461253D95CE00B88033 /* login-cycle-1.jpg */,
+				17162462253D95CE00B88033 /* login-cycle-2.jpg */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -176,6 +254,8 @@
 				179A4DDA2520968B00EC81C5 /* Sources */,
 				179A4DDB2520968B00EC81C5 /* Frameworks */,
 				179A4DDC2520968B00EC81C5 /* Resources */,
+				17162448253D927000B88033 /* Embed Frameworks */,
+				1716244B253D927D00B88033 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -255,6 +335,12 @@
 			mainGroup = 179A4DD52520968B00EC81C5;
 			productRefGroup = 179A4DDF2520968B00EC81C5 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 17162452253D947700B88033 /* Products */;
+					ProjectRef = 17162451253D947700B88033 /* DispatchCommon.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				179A4DDD2520968B00EC81C5 /* ServiceDemo */,
@@ -264,13 +350,34 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		17162457253D947700B88033 /* DispatchCommon.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DispatchCommon.framework;
+			remoteRef = 17162456253D947700B88033 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		17162459253D947700B88033 /* DispatchCommonTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DispatchCommonTests.xctest;
+			remoteRef = 17162458253D947700B88033 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		179A4DDC2520968B00EC81C5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1716243D253C536F00B88033 /* Cartfile in Resources */,
 				179A4DE92520968D00EC81C5 /* Preview Assets.xcassets in Resources */,
 				179A4DE62520968D00EC81C5 /* Assets.xcassets in Resources */,
+				17162463253D95CE00B88033 /* login-cycle-0.jpg in Resources */,
+				17162464253D95CE00B88033 /* login-cycle-1.jpg in Resources */,
+				17162465253D95CE00B88033 /* login-cycle-2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +396,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1716244B253D927D00B88033 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"$(SRCROOT)/Dependencies/ServiceCarthageInput.xcfilelist",
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+				"$(SRCROOT)/Dependencies/ServiceCarthageOutput.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		179A4DDA2520968B00EC81C5 /* Sources */ = {
@@ -462,6 +591,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ServiceDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ServiceDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -486,6 +619,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ServiceDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ServiceDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
