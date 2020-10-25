@@ -23,26 +23,29 @@ struct LoginView: View {
             })
             .frame(height: 213)
             
-            HStack {
-                Image("phone")
-                Divider()
-                    .frame(width: 1, height: 14)
-                TextField("请输入手机号码", text: $phone)
-                    .font(.system(size: 16.0))
-                    .keyboardType(.phonePad)
+            ZStack {
+                HStack {
+                    Image("phone")
+                    Divider()
+                        .frame(width: 1, height: 14)
+                    TextField("请输入手机号码", text: $phone)
+                        .font(.system(size: 16.0))
+                        .keyboardType(.phonePad)
+                }
+                .padding()
+                .background(
+                    Capsule()
+                        .fill(LoginView.backgroundColor)
+                )
             }
-            .padding()
-            .background(
-                Capsule()
-                    .fill(LoginView.backgroundColor)
-            )
+            .padding(.horizontal)
             
             ZStack(alignment: .trailing) {
                 HStack {
                     Image("password")
                     Divider()
                         .frame(width: 1, height: 14)
-                    SecureField("请输入验证码", text: $password)
+                    TextField("请输入验证码", text: $password)
                         .font(.system(size: 16.0))
                         .keyboardType(.numberPad)
                 }
@@ -67,6 +70,8 @@ struct LoginView: View {
                 )
                 .padding(.trailing)
             }
+            .padding(.horizontal)
+            
             Spacer()
         }
     }
