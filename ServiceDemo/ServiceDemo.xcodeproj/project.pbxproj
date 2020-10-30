@@ -13,7 +13,13 @@
 		17162463253D95CE00B88033 /* login-cycle-0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17162460253D95CE00B88033 /* login-cycle-0.jpg */; };
 		17162464253D95CE00B88033 /* login-cycle-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17162461253D95CE00B88033 /* login-cycle-1.jpg */; };
 		17162465253D95CE00B88033 /* login-cycle-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17162462253D95CE00B88033 /* login-cycle-2.jpg */; };
+		1729FDE525497AD2000B2999 /* CreateWalkingOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1729FDE425497AD2000B2999 /* CreateWalkingOrder.swift */; };
+		17419EAD2547199000FD3D62 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17419EAC2547199000FD3D62 /* UserSettings.swift */; };
+		174A3B9A2545B86100709F0F /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 174A3B972545B86100709F0F /* logo.jpg */; };
+		174A3BA12545BF3600709F0F /* DispatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174A3BA02545BF3600709F0F /* DispatchView.swift */; };
+		174A3BA72545D32100709F0F /* CreateBarberOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174A3BA62545D32100709F0F /* CreateBarberOrderView.swift */; };
 		176257322520FA2A005704BD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176257312520FA2A005704BD /* MainView.swift */; };
+		1784EC75254A9E130019F4D6 /* OrderList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1784EC74254A9E130019F4D6 /* OrderList.swift */; };
 		179A4DE22520968B00EC81C5 /* ServiceDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179A4DE12520968B00EC81C5 /* ServiceDemoApp.swift */; };
 		179A4DE42520968B00EC81C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179A4DE32520968B00EC81C5 /* ContentView.swift */; };
 		179A4DE62520968D00EC81C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 179A4DE52520968D00EC81C5 /* Assets.xcassets */; };
@@ -80,7 +86,13 @@
 		17162460253D95CE00B88033 /* login-cycle-0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "login-cycle-0.jpg"; sourceTree = "<group>"; };
 		17162461253D95CE00B88033 /* login-cycle-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "login-cycle-1.jpg"; sourceTree = "<group>"; };
 		17162462253D95CE00B88033 /* login-cycle-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "login-cycle-2.jpg"; sourceTree = "<group>"; };
+		1729FDE425497AD2000B2999 /* CreateWalkingOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWalkingOrder.swift; sourceTree = "<group>"; };
+		17419EAC2547199000FD3D62 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		174A3B972545B86100709F0F /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
+		174A3BA02545BF3600709F0F /* DispatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchView.swift; sourceTree = "<group>"; };
+		174A3BA62545D32100709F0F /* CreateBarberOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBarberOrderView.swift; sourceTree = "<group>"; };
 		176257312520FA2A005704BD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		1784EC74254A9E130019F4D6 /* OrderList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderList.swift; sourceTree = "<group>"; };
 		179A4DDE2520968B00EC81C5 /* ServiceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServiceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		179A4DE12520968B00EC81C5 /* ServiceDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDemoApp.swift; sourceTree = "<group>"; };
 		179A4DE32520968B00EC81C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -150,6 +162,25 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		17419EA92547194800FD3D62 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				17419EAC2547199000FD3D62 /* UserSettings.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		174A3B9F2545BEC500709F0F /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				174A3BA02545BF3600709F0F /* DispatchView.swift */,
+				174A3BA62545D32100709F0F /* CreateBarberOrderView.swift */,
+				1729FDE425497AD2000B2999 /* CreateWalkingOrder.swift */,
+				1784EC74254A9E130019F4D6 /* OrderList.swift */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
 		176257302520FA19005704BD /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +219,8 @@
 			children = (
 				17FA98952538A41000F1BB1A /* Resources */,
 				17FA988C25388F4800F1BB1A /* Login */,
+				174A3B9F2545BEC500709F0F /* Order */,
+				17419EA92547194800FD3D62 /* User */,
 				176257302520FA19005704BD /* Main */,
 				179A4DE12520968B00EC81C5 /* ServiceDemoApp.swift */,
 				179A4DE32520968B00EC81C5 /* ContentView.swift */,
@@ -240,6 +273,7 @@
 				17162460253D95CE00B88033 /* login-cycle-0.jpg */,
 				17162461253D95CE00B88033 /* login-cycle-1.jpg */,
 				17162462253D95CE00B88033 /* login-cycle-2.jpg */,
+				174A3B972545B86100709F0F /* logo.jpg */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -375,6 +409,7 @@
 				1716243D253C536F00B88033 /* Cartfile in Resources */,
 				179A4DE92520968D00EC81C5 /* Preview Assets.xcassets in Resources */,
 				179A4DE62520968D00EC81C5 /* Assets.xcassets in Resources */,
+				174A3B9A2545B86100709F0F /* logo.jpg in Resources */,
 				17162463253D95CE00B88033 /* login-cycle-0.jpg in Resources */,
 				17162464253D95CE00B88033 /* login-cycle-1.jpg in Resources */,
 				17162465253D95CE00B88033 /* login-cycle-2.jpg in Resources */,
@@ -424,12 +459,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				174A3BA72545D32100709F0F /* CreateBarberOrderView.swift in Sources */,
 				17FA988E25388F5900F1BB1A /* LoginView.swift in Sources */,
 				179A4DEB2520968D00EC81C5 /* Persistence.swift in Sources */,
+				1784EC75254A9E130019F4D6 /* OrderList.swift in Sources */,
+				1729FDE525497AD2000B2999 /* CreateWalkingOrder.swift in Sources */,
+				17419EAD2547199000FD3D62 /* UserSettings.swift in Sources */,
 				179A4DE42520968B00EC81C5 /* ContentView.swift in Sources */,
 				179A4DEE2520968D00EC81C5 /* ServiceDemo.xcdatamodeld in Sources */,
 				176257322520FA2A005704BD /* MainView.swift in Sources */,
 				179A4DE22520968B00EC81C5 /* ServiceDemoApp.swift in Sources */,
+				174A3BA12545BF3600709F0F /* DispatchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
