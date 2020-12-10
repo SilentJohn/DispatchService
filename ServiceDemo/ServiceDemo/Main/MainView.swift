@@ -24,6 +24,7 @@ struct MainView: View {
                 }
                 .tabItem {
                     Image("plus")
+                        .renderingMode(.template)
                     Text("派单")
                 }
                 .tag(TabType.dispatch)
@@ -33,11 +34,12 @@ struct MainView: View {
                     .init(id: 1, type: .barber, startDate: .init(timeIntervalSinceNow: -60 * 60), endDate: .init(), status: .ongoing),
                     .init(id: 2, type: .barber, startDate: .init(timeIntervalSinceNow: -120 * 60), endDate: .init(timeIntervalSinceNow: -60 * 60), status: .done)
                 ])
-                    .tabItem {
-                        Image("order")
-                        Text("订单")
-                    }
-                    .tag(TabType.order)
+                .tabItem {
+                    Image("order")
+                        .renderingMode(.template)
+                    Text("订单")
+                }
+                .tag(TabType.order)
                 
                 List {
                     HStack {
@@ -49,10 +51,12 @@ struct MainView: View {
                 .navigationTitle(Text("User"))
                 .tabItem {
                     Image("mine")
+                        .renderingMode(.template)
                     Text("我的")
                 }
                 .tag(TabType.profile)
             }
+            .accentColor(.init(hex: 0xA8071A))
             .fullScreenCover(isPresented: $userSettings.needLogin) {
                 LoginView()
                     .environmentObject(userSettings)

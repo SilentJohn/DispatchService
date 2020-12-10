@@ -28,6 +28,8 @@
 		179A4DEE2520968D00EC81C5 /* ServiceDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 179A4DEC2520968D00EC81C5 /* ServiceDemo.xcdatamodeld */; };
 		179A4DF92520968E00EC81C5 /* ServiceDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179A4DF82520968E00EC81C5 /* ServiceDemoTests.swift */; };
 		179A4E042520968E00EC81C5 /* ServiceDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179A4E032520968E00EC81C5 /* ServiceDemoUITests.swift */; };
+		17ED769C254C1DAB00A23905 /* MyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ED769B254C1DAB00A23905 /* MyInfoView.swift */; };
+		17ED76A4254D97B700A23905 /* OrderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ED76A3254D97B700A23905 /* OrderDetail.swift */; };
 		17FA988E25388F5900F1BB1A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FA988D25388F5900F1BB1A /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +109,8 @@
 		179A4DFF2520968E00EC81C5 /* ServiceDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ServiceDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		179A4E032520968E00EC81C5 /* ServiceDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDemoUITests.swift; sourceTree = "<group>"; };
 		179A4E052520968E00EC81C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17ED769B254C1DAB00A23905 /* MyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoView.swift; sourceTree = "<group>"; };
+		17ED76A3254D97B700A23905 /* OrderDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetail.swift; sourceTree = "<group>"; };
 		17FA988D25388F5900F1BB1A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -166,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				17419EAC2547199000FD3D62 /* UserSettings.swift */,
+				17ED769B254C1DAB00A23905 /* MyInfoView.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 				174A3BA62545D32100709F0F /* CreateBarberOrderView.swift */,
 				1729FDE425497AD2000B2999 /* CreateWalkingOrder.swift */,
 				1784EC74254A9E130019F4D6 /* OrderList.swift */,
+				17ED76A3254D97B700A23905 /* OrderDetail.swift */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -460,10 +466,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				174A3BA72545D32100709F0F /* CreateBarberOrderView.swift in Sources */,
+				17ED769C254C1DAB00A23905 /* MyInfoView.swift in Sources */,
 				17FA988E25388F5900F1BB1A /* LoginView.swift in Sources */,
 				179A4DEB2520968D00EC81C5 /* Persistence.swift in Sources */,
 				1784EC75254A9E130019F4D6 /* OrderList.swift in Sources */,
 				1729FDE525497AD2000B2999 /* CreateWalkingOrder.swift in Sources */,
+				17ED76A4254D97B700A23905 /* OrderDetail.swift in Sources */,
 				17419EAD2547199000FD3D62 /* UserSettings.swift in Sources */,
 				179A4DE42520968B00EC81C5 /* ContentView.swift in Sources */,
 				179A4DEE2520968D00EC81C5 /* ServiceDemo.xcdatamodeld in Sources */,

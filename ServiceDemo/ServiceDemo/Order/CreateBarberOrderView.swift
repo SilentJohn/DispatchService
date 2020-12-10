@@ -8,10 +8,49 @@
 import SwiftUI
 import DispatchCommon
 
+enum PayMode: Int, CaseIterable, Hashable, Identifiable {
+    case baseOnly, bonusOnly, mix
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(rawValue)
+    }
+    
+    var id: PayMode {
+        return self
+    }
+}
+
+enum OrderOption: Int, CaseIterable, Hashable, Identifiable, CustomStringConvertible {
+    case cat, dog, tooth, reptile, bird
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(rawValue)
+    }
+    
+    var id: OrderOption {
+        return self
+    }
+    
+    var description: String {
+        switch self {
+        case .cat:
+            return "有猫"
+        case .dog:
+            return "中型犬"
+        case .tooth:
+            return "需要洁牙"
+        case .reptile:
+            return "有爬行类"
+        case .bird:
+            return "鸟类"
+        }
+    }
+}
+
 struct CreateBarberOrder: View {
     @State var startDate: Date = .init()
     @State var endDate: Date = .init()
-    @State var orderOptions: Set<OptionType> = .init([])
+    @State var orderOptions: Set<OrderOption> = .init([])
     
     var body: some View {
         Form {
@@ -29,7 +68,7 @@ struct CreateBarberOrder: View {
             
             Section(header: Text("订单属性")) {
                 MultiSelectView(
-                    options: OptionType.allCases,
+                    options: OrderOption.allCases,
                     selected: $orderOptions
                 ) {
                     Text(orderOptions.isEmpty ? "请选择" :"已选择:")
@@ -37,7 +76,7 @@ struct CreateBarberOrder: View {
             }
             
             Section(header: Text("付费模式（勾选后即可供接单者选择）")) {
-                ForEach(PayTypeRow.Category.allCases) {
+                ForEach(PayMode.allCases) {
                     PayTypeRow($0)
                 }
             }
@@ -45,12 +84,12 @@ struct CreateBarberOrder: View {
     }
     
     struct PayTypeRow: View {
-        var payType: Category
+        var payType: PayMode
         @State var isSelected: Bool = false
         @State var base: String = ""
         @State var bonus: String = ""
         
-        init(_ type: Category) {
+        init(_ type: PayMode) {
             payType = type
         }
         
@@ -106,45 +145,6 @@ struct CreateBarberOrder: View {
                         Text("%")
                     }
                 }
-            }
-        }
-        
-        enum Category: Int, CaseIterable, Hashable, Identifiable {
-            case baseOnly, bonusOnly, mix
-            
-            func hash(into hasher: inout Hasher) {
-                hasher.combine(rawValue)
-            }
-            
-            var id: Category {
-                return self
-            }
-        }
-    }
-    
-    enum OptionType: Int, CaseIterable, Hashable, Identifiable, CustomStringConvertible {
-        case cat, dog, tooth, reptile, bird
-        
-        func hash(into hasher: inout Hasher) {
-            hasher.combine(rawValue)
-        }
-        
-        var id: OptionType {
-            return self
-        }
-        
-        var description: String {
-            switch self {
-            case .cat:
-                return "有猫"
-            case .dog:
-                return "中型犬"
-            case .tooth:
-                return "需要洁牙"
-            case .reptile:
-                return "有爬行类"
-            case .bird:
-                return "鸟类"
             }
         }
     }
